@@ -1,0 +1,10 @@
+<h2>Figures Index Page</h2>
+
+<h3>Here are all the current figures: </h3>
+
+<ul>
+	<% @figures.each do |figure|%>
+		<li><a href="/figures/<%= figure.slug %>"><%= figure.name %></a></li>
+	<% end %>
+</ul>
+

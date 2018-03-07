@@ -1,0 +1,16 @@
+<h2>Landmarks Index Page</h2>
+
+<h3>Here are all the current landmarks: </h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Year Completed</th>
+  </tr>
+  <tr>
+  	<% Landmark.all.each do |landmark|%>
+    <td><%= landmark.name %></td>
+    <td><%= landmark.year_completed %></td>
+    <% end %>
+  </tr>
+<table>
